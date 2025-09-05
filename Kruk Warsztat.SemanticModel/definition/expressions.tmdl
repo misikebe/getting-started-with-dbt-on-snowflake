@@ -1,0 +1,11 @@
+expression 'DirectQuery to AS - Customer Profitability Sample' =
+		let
+		    Source = AnalysisServices.Database("powerbi://api.powerbi.com/v1.0/myorg/ELITMIND%20Power%20BI%20Demos", "Customer Profitability Sample"),
+		    Cubes = Table.Combine(Source[Data]),
+		    Cube = Cubes{[Id="Model", Kind="Cube"]}[Data]
+		in
+		    Cube
+	lineageTag: a8c69003-b117-4491-9cc0-72f810b33528
+
+	annotation PBI_IncludeFutureArtifacts = True
+

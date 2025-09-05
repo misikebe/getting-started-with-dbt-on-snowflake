@@ -1,0 +1,471 @@
+table Facts
+	lineageTag: f5f1f995-dcf3-4466-a285-9cd1608f76d5
+
+	measure 'Total Revenue' = EXTERNALMEASURE("Total Revenue", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 641d7cd3-601e-4f5a-8083-3d37302cbfe9
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.Total Revenue
+		dataCategory: Uncategorized
+
+	measure 'Sum of Material Costs' = EXTERNALMEASURE("Sum of Material Costs", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: c4a67acf-aa5a-4987-b6b1-bc04c9efbe17
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.Sum of Material Costs
+		dataCategory: Uncategorized
+
+	measure 'Sum of Labor Costs Variable' = EXTERNALMEASURE("Sum of Labor Costs Variable", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: cdf60b80-327e-4fb9-a15e-be3cc6781acd
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.Sum of Labor Costs Variable
+		dataCategory: Uncategorized
+
+	measure 'Sum of Taxes' = EXTERNALMEASURE("Sum of Taxes", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 9f63579b-d0a9-4da4-bd70-13f2ea0fb670
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.Sum of Taxes
+		dataCategory: Uncategorized
+
+	measure 'Sum of Revenue for Expense Travel' = EXTERNALMEASURE("Sum of Revenue for Expense Travel", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 64c696fc-ad55-4833-bcfe-f3b74e527809
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.Sum of Revenue for Expense Travel
+		dataCategory: Uncategorized
+
+	measure 'Sum of Travel Expenses' = EXTERNALMEASURE("Sum of Travel Expenses", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 693a3423-c74e-443d-a4ac-c5c7b8984e16
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.Sum of Travel Expenses
+		dataCategory: Uncategorized
+
+	measure 'Sum of Third Party Costs' = EXTERNALMEASURE("Sum of Third Party Costs", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: eb961f54-cf83-49af-a280-a0920f9f3639
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.Sum of Third Party Costs
+		dataCategory: Uncategorized
+
+	measure 'Sum of Subscription Revenue' = EXTERNALMEASURE("Sum of Subscription Revenue", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 233438ac-7bf3-4972-ad06-dc83b14ccdca
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.Sum of Subscription Revenue
+		dataCategory: Uncategorized
+
+	measure 'Gross Margin' = EXTERNALMEASURE("Gross Margin", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 17a70dd2-4e8f-4039-9a57-1dee0f931973
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.Gross Margin
+		dataCategory: Uncategorized
+
+	measure 'Gross Margin %' = EXTERNALMEASURE("Gross Margin %", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: 45965445-7c7b-4e88-b2ee-b14e453be8de
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.Gross Margin %
+		dataCategory: Uncategorized
+
+	measure 'YTD Revenue' = EXTERNALMEASURE("YTD Revenue", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 45c685d3-f457-4b5f-a3af-bd26e6a8a3bd
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.YTD Revenue
+		dataCategory: Uncategorized
+
+	measure 'Total COGS' = EXTERNALMEASURE("Total COGS", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 47ef07c8-831e-4cfe-a2ed-2f10d704f9f4
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.Total COGS
+		dataCategory: Uncategorized
+
+	measure 'YTD COGS' = EXTERNALMEASURE("YTD COGS", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 2c7bdecb-c6e7-4ec9-aa55-f76400dc80ae
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.YTD COGS
+		dataCategory: Uncategorized
+
+	measure 'YTD Gross Margin' = EXTERNALMEASURE("YTD Gross Margin", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: bc7b3a0c-9d25-4512-85f3-403b9e4263fe
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.YTD Gross Margin
+		dataCategory: Uncategorized
+
+	measure 'Revenue SPLY' = EXTERNALMEASURE("Revenue SPLY", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: f2708631-3486-4a66-8e0d-46cb56b9b761
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.Revenue SPLY
+		dataCategory: Uncategorized
+
+	measure 'Gross Margin SPLY' = EXTERNALMEASURE("Gross Margin SPLY", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 984b5d91-eb10-41d2-905b-ea618c01a6d1
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.Gross Margin SPLY
+		dataCategory: Uncategorized
+
+	measure 'Gross Margin % SPLY' = EXTERNALMEASURE("Gross Margin % SPLY", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: 1a8d118e-4edb-4b76-8f8c-d701533b8e26
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.Gross Margin % SPLY
+		dataCategory: Uncategorized
+
+	measure 'YTD Gross Margin %' = EXTERNALMEASURE("YTD Gross Margin %", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: 89a443b4-6c08-46a4-9523-3a17ed97931c
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.YTD Gross Margin %
+		dataCategory: Uncategorized
+
+	measure 'YTD Revenue SPLY' = EXTERNALMEASURE("YTD Revenue SPLY", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: f4dec1aa-1df5-482e-88b1-61aed5694bf4
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.YTD Revenue SPLY
+		dataCategory: Uncategorized
+
+	measure 'COGS SPLY' = EXTERNALMEASURE("COGS SPLY", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: da5c99f6-30d9-446f-a068-e9cde97a87d9
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.COGS SPLY
+		dataCategory: Uncategorized
+
+	measure 'YTD COGS SPLY' = EXTERNALMEASURE("YTD COGS SPLY", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 7eb93e13-e778-44f3-9a3b-862f23e50ffc
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.YTD COGS SPLY
+		dataCategory: Uncategorized
+
+	measure 'YTD Gross Margin % SPLY' = EXTERNALMEASURE("YTD Gross Margin % SPLY", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: 341a4956-dcab-480c-8748-d199df65e5fb
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.YTD Gross Margin % SPLY
+		dataCategory: Uncategorized
+
+	measure 'YTD Gross Margin SPLY' = EXTERNALMEASURE("YTD Gross Margin SPLY", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: bcf8bdfb-4323-443a-a870-cb33c7bdabf3
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.YTD Gross Margin SPLY
+		dataCategory: Uncategorized
+
+	measure 'YoY Revenue Variance' = EXTERNALMEASURE("YoY Revenue Variance", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: a5ddf75d-36fe-4d3d-bd03-4a557fefa68d
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.YoY Revenue Variance
+		dataCategory: Uncategorized
+
+	measure 'YoY Gross Margin Variance' = EXTERNALMEASURE("YoY Gross Margin Variance", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 86479587-ed2a-474b-be7f-aec41761e358
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.YoY Gross Margin Variance
+		dataCategory: Uncategorized
+
+	measure 'YoY Revenue Growth' = EXTERNALMEASURE("YoY Revenue Growth", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: e2dbf64c-2afc-40e9-b3c0-43bf0e5a68e5
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.YoY Revenue Growth
+		dataCategory: Uncategorized
+
+	measure 'YoY Gross Margin Growth' = EXTERNALMEASURE("YoY Gross Margin Growth", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: c6d25fc6-67cc-44a3-8edf-8a77daff5126
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.YoY Gross Margin Growth
+		dataCategory: Uncategorized
+
+	measure 'YoY YTD Revenue Variance' = EXTERNALMEASURE("YoY YTD Revenue Variance", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 2d30f1cb-6783-4e5a-b624-82a8ced2cccb
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.YoY YTD Revenue Variance
+		dataCategory: Uncategorized
+
+	measure 'YoY COGS Variance' = EXTERNALMEASURE("YoY COGS Variance", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: ef7a69a4-0a02-4b00-9cad-47dae182acb5
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.YoY COGS Variance
+		dataCategory: Uncategorized
+
+	measure 'YoY YTD COGS Variance' = EXTERNALMEASURE("YoY YTD COGS Variance", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 571e68c1-1c10-456a-b973-87477d004d30
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.YoY YTD COGS Variance
+		dataCategory: Uncategorized
+
+	measure 'YoY YTD Gross Margin % Variance' = EXTERNALMEASURE("YoY YTD Gross Margin % Variance", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: #,0.00\ %;-#,0.00\ %;#,0.00\ %
+		lineageTag: d765e384-ba34-4d17-811a-01068ee902e1
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.YoY YTD Gross Margin % Variance
+		dataCategory: Uncategorized
+
+	measure 'YoY YTD Gross Margin Variance' = EXTERNALMEASURE("YoY YTD Gross Margin Variance", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 9fa6e56b-4e67-4bd3-84ec-56b174263d28
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.YoY YTD Gross Margin Variance
+		dataCategory: Uncategorized
+
+	measure 'YoY Gross Margin % Variance' = EXTERNALMEASURE("YoY Gross Margin % Variance", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		lineageTag: 62899529-113e-4899-b056-8d508689efe0
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.YoY Gross Margin % Variance
+		dataCategory: Uncategorized
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'YoY YTD Revenue Growth' = EXTERNALMEASURE("YoY YTD Revenue Growth", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: 897b20bf-a733-4cdf-b8c6-7aab82901638
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.YoY YTD Revenue Growth
+		dataCategory: Uncategorized
+
+	measure 'YoY COGS Growth' = EXTERNALMEASURE("YoY COGS Growth", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: ff8b3975-0d03-416b-8c5b-f3ea9977ae1a
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.YoY COGS Growth
+		dataCategory: Uncategorized
+
+	measure 'YoY YTD COGS Growth' = EXTERNALMEASURE("YoY YTD COGS Growth", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: d040ee50-ed35-4996-b2a0-ebf30beb61b2
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.YoY YTD COGS Growth
+		dataCategory: Uncategorized
+
+	measure 'YoY YTD Gross Margin Growth' = EXTERNALMEASURE("YoY YTD Gross Margin Growth", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: ea578314-db31-46e0-be43-836273648683
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.YoY YTD Gross Margin Growth
+		dataCategory: Uncategorized
+
+	measure 'Number of Customers' = EXTERNALMEASURE("Number of Customers", INTEGER, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: 0
+		lineageTag: 05c06534-c61f-49be-9530-43f0e7c464e9
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.Number of Customers
+		dataCategory: Uncategorized
+
+	measure 'Number of Products' = EXTERNALMEASURE("Number of Products", INTEGER, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: 0
+		lineageTag: 8ff5c3d2-1c4a-4374-a136-4db90ea58329
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.Number of Products
+		dataCategory: Uncategorized
+
+	measure 'Revenue Budget' = EXTERNALMEASURE("Revenue Budget", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: d73a8e60-9271-4e33-8e52-2c8189e050e8
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.Revenue Budget
+		dataCategory: Uncategorized
+
+	measure 'Revenue Variance to Budget' = EXTERNALMEASURE("Revenue Variance to Budget", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 2bb351d5-79ca-4cfe-a39a-4c88863a4068
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.Revenue Variance to Budget
+		dataCategory: Uncategorized
+
+	measure 'Revenue % Variance to Budget' = EXTERNALMEASURE("Revenue % Variance to Budget", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 52f2c366-e0a4-4d3e-a421-146633f71a69
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.Revenue % Variance to Budget
+		dataCategory: Uncategorized
+
+	measure 'RevenueTY KPI' = EXTERNALMEASURE("RevenueTY KPI", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		isHidden
+		lineageTag: cef16580-c8d6-4713-83d5-7d77e440b540
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.RevenueTY KPI
+		dataCategory: Uncategorized
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Revenue This Year -  Red' = EXTERNALMEASURE("Revenue This Year -  Red", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		isHidden
+		lineageTag: 5daaf0d3-5181-45b6-bd5d-eb3af7631714
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.Revenue This Year -  Red
+		dataCategory: Uncategorized
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Revenue This Year - Yellow' = EXTERNALMEASURE("Revenue This Year - Yellow", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		isHidden
+		lineageTag: 8b955824-78b2-483f-8ca9-e59218331b9d
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.Revenue This Year - Yellow
+		dataCategory: Uncategorized
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Revenue This Year - Green' = EXTERNALMEASURE("Revenue This Year - Green", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		isHidden
+		lineageTag: 10c6435d-41d8-42e7-83e1-b3c1eed2d2eb
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.Revenue This Year - Green
+		dataCategory: Uncategorized
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure RevenueTY = EXTERNALMEASURE("RevenueTY", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 0dd2e940-5c53-4189-87c1-f4f18ccb4e50
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.RevenueTY
+		dataCategory: Uncategorized
+
+	measure '_RevenueTY Goal' = EXTERNALMEASURE("_RevenueTY Goal", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: \$#,0;(\$#,0);\$#,0
+		isHidden
+		lineageTag: 20ba329e-64fb-4110-ab79-e27823fc1f3e
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample._RevenueTY Goal
+		dataCategory: Uncategorized
+
+	measure '_RevenueTY Status' = EXTERNALMEASURE("_RevenueTY Status", INTEGER, "DirectQuery to AS - Customer Profitability Sample")
+		formatString: 0
+		isHidden
+		lineageTag: 3895cf39-4116-4cce-b6b5-bae2d70d7bdb
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample._RevenueTY Status
+		dataCategory: Uncategorized
+
+	measure 'Sum of Revenue' = EXTERNALMEASURE("Sum of Revenue", DOUBLE, "DirectQuery to AS - Customer Profitability Sample")
+		lineageTag: 66e68e99-8a92-492f-ad81-29748b302bad
+		sourceLineageTag: DirectQuery to AS - Customer Profitability Sample.Sum of Revenue
+		dataCategory: Uncategorized
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Customer Key'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 756a50cd-761e-4cff-80b9-7cf833415b9d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Customer Key
+
+		annotation SummarizationSetBy = User
+
+	column 'Product Key'
+		dataType: string
+		isHidden
+		lineageTag: 299f4c1c-7c23-4bd6-8015-b41f3469e6a7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Product Key
+
+		annotation SummarizationSetBy = User
+
+	column 'BU Key'
+		dataType: double
+		isHidden
+		lineageTag: 7085b300-40bb-4039-81e2-bcd7d99a5c8d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: BU Key
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Scenario Key'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: f5c6713f-4a5b-4709-8c7e-43e3d00eca01
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Scenario Key
+
+		annotation SummarizationSetBy = User
+
+	column Revenue
+		dataType: double
+		isHidden
+		lineageTag: 25225c87-96f0-4785-a74e-571ca1f84c94
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Revenue
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Material Costs'
+		dataType: double
+		isHidden
+		lineageTag: eae800b4-00fa-47d1-855e-2e81a481017b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Material Costs
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Labor Costs Variable'
+		dataType: double
+		isHidden
+		lineageTag: cb64006f-9805-48a7-9177-8c83bd4ae41e
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Labor Costs Variable
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Taxes
+		dataType: double
+		isHidden
+		lineageTag: 937c0d7d-7bd3-46d7-91b1-cd0888984b04
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Taxes
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Rev for Exp Travel'
+		dataType: double
+		isHidden
+		lineageTag: 1d0c0811-06a4-4031-9183-14b7fd8c919c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Rev for Exp Travel
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Travel Expenses'
+		dataType: double
+		isHidden
+		lineageTag: 5336f2f2-aa5d-4b14-8d23-c7c7bc7285f6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Travel Expenses
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Cost Third Party'
+		dataType: double
+		isHidden
+		lineageTag: 9206ff14-6ccf-4d7e-941f-63a5966b6c15
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Cost Third Party
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Subscription Revenue'
+		dataType: double
+		isHidden
+		lineageTag: 584b4922-c02c-484f-bf2b-240cc74637ef
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Subscription Revenue
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column YearPeriod
+		dataType: string
+		isHidden
+		lineageTag: fc1547a9-04c0-41c6-9dcc-2669aa9469cf
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: YearPeriod
+
+		annotation SummarizationSetBy = User
+
+	partition Facts = entity
+		mode: directQuery
+		source
+			entityName: Facts
+			expressionSource: 'DirectQuery to AS - Customer Profitability Sample'
+

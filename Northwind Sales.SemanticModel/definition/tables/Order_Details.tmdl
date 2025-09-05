@@ -1,0 +1,73 @@
+table Order_Details
+	lineageTag: 78004fa0-df40-4198-b45a-4e80eecc1240
+
+	measure 'Discoutn Value' = 1
+		formatString: 0
+		lineageTag: b5826cc5-1fae-4c02-ad2c-fa9ff42c54fa
+
+	column OrderID
+		dataType: int64
+		formatString: 0
+		lineageTag: 8e0cd212-8554-4b60-9b84-3381953e6edb
+		summarizeBy: none
+		sourceColumn: OrderID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductID
+		dataType: int64
+		formatString: 0
+		lineageTag: 733e40b7-a2c4-47bf-9763-543768b6d068
+		summarizeBy: none
+		sourceColumn: ProductID
+
+		annotation SummarizationSetBy = Automatic
+
+	column UnitPrice
+		dataType: double
+		lineageTag: 89863b9a-04fb-424d-b8bc-a1a41f15dbba
+		summarizeBy: sum
+		sourceColumn: UnitPrice
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Quantity
+		dataType: int64
+		formatString: 0
+		lineageTag: dfa27b1b-c681-45e7-9034-8a1a8032dce5
+		summarizeBy: sum
+		sourceColumn: Quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	column Discount
+		dataType: double
+		lineageTag: 3f1a82ea-7298-4aa5-8db1-151c32e7a4f0
+		summarizeBy: sum
+		sourceColumn: Discount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Sales = Order_Details[UnitPrice]*Order_Details[Quantity]
+		lineageTag: be684315-62bb-407d-9e85-56a6a5c663a9
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Order_Details = m
+		mode: import
+		source =
+				let
+				    Source = OData.Feed("https://services.odata.org/V3/Northwind/Northwind.svc/", null, [Implementation="2.0"]),
+				    Order_Details_table = Source{[Name="Order_Details",Signature="table"]}[Data]
+				in
+				    Order_Details_table
+
+	annotation PBI_ResultType = Table
+

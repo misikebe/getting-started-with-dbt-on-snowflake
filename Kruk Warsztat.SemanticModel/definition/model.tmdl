@@ -1,0 +1,27 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["DirectQuery to AS - Customer Profitability Sample"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.145.1602.0 (25.07)+10647c9fa319b5e39936cdb21328038c371d1fe4
+
+ref table Facts
+ref table 'Business Units'
+ref table Dates
+ref table Scenarios
+ref table Products
+ref table Customers
+ref table Industries
+ref table Executives
+ref table States
+ref table LocalDateTable_4bd32d5c-bddb-4c2f-9c42-0ae8401ede79
+
+ref cultureInfo en-US
+

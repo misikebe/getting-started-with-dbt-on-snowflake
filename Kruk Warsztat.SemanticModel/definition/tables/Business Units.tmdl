@@ -1,0 +1,63 @@
+table 'Business Units'
+	lineageTag: a3f4c13e-0542-4aef-ad47-abedf3d1afab
+
+	column 'BU Key'
+		dataType: double
+		isHidden
+		isNullable: false
+		lineageTag: 27731942-2c7c-461a-a371-8ca116a09c11
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: BU Key
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Business Unit'
+		dataType: string
+		lineageTag: 5a24d685-561e-4520-8233-ab453fd3a37c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Business Unit
+
+		annotation SummarizationSetBy = User
+
+	column Division
+		dataType: string
+		lineageTag: b99e0597-8004-4099-b4cd-c367319b0579
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Division
+
+		annotation SummarizationSetBy = User
+
+	column Executive_id
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 17d055ba-9cd2-452b-9212-d29400cac1f9
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Executive_id
+
+		annotation SummarizationSetBy = User
+
+	hierarchy BUHierarchy
+		lineageTag: 4a8b06b8-e182-4e4e-8333-4fdebd7099b1
+		sourceLineageTag: BUHierarchy
+
+		level Division
+			lineageTag: 73ae3232-4cd7-4011-85c8-dc35f2805a88
+			column: Division
+
+		level BU
+			lineageTag: 713ee0e2-6571-4af5-b0f8-d204a410bc4b
+			column: 'Business Unit'
+
+	partition 'Business Units' = entity
+		mode: directQuery
+		source
+			entityName: Business Units
+			expressionSource: 'DirectQuery to AS - Customer Profitability Sample'
+

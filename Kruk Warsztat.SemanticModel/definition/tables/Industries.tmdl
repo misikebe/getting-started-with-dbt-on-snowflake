@@ -1,0 +1,39 @@
+table Industries
+	lineageTag: caaf1e72-ec8b-484f-a13f-59007521dac5
+
+	column ID
+		dataType: int64
+		isHidden
+		isNullable: false
+		formatString: 0
+		lineageTag: d595b59c-7c59-4c8c-8582-57d75c9607e0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = User
+
+	column Industry
+		dataType: string
+		lineageTag: a894656a-9c37-4ae0-9329-4a3c4f7a2284
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Industry
+
+		annotation SummarizationSetBy = User
+
+	column 'Industry Image'
+		dataType: binary
+		lineageTag: 9ff8ab8f-777c-411e-a766-ff07d98194b9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Industry Image
+
+		annotation SummarizationSetBy = User
+
+	partition Industries = entity
+		mode: directQuery
+		source
+			entityName: Industries
+			expressionSource: 'DirectQuery to AS - Customer Profitability Sample'
+

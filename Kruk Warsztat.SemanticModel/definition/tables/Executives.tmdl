@@ -1,0 +1,39 @@
+table Executives
+	lineageTag: a2bdb118-73f0-4b59-8981-d9d53c8f8cf5
+
+	column ID
+		dataType: int64
+		isHidden
+		isNullable: false
+		formatString: 0
+		lineageTag: bc070726-9d35-4bbd-a484-8daaf1b0efec
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = User
+
+	column Executive
+		dataType: string
+		lineageTag: 32218270-80af-4b9f-8d66-100968de8617
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Executive
+
+		annotation SummarizationSetBy = User
+
+	column 'Executive Image'
+		dataType: binary
+		lineageTag: 75c1144d-b401-437f-9ee6-73a3c88112b1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Executive Image
+
+		annotation SummarizationSetBy = User
+
+	partition Executives = entity
+		mode: directQuery
+		source
+			entityName: Executives
+			expressionSource: 'DirectQuery to AS - Customer Profitability Sample'
+

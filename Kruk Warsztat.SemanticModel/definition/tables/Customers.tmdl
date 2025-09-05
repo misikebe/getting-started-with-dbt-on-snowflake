@@ -1,0 +1,105 @@
+table Customers
+	lineageTag: ae242d3d-7329-4a34-8f2b-204accf162b5
+
+	column Customer
+		dataType: double
+		isHidden
+		isNullable: false
+		lineageTag: b1d6a1a0-8a91-47db-9939-44c945d0537b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Customer
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Country/Region
+		dataType: string
+		lineageTag: 77abd123-66b2-46b5-bd10-eab75c29031c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Country/Region
+
+		annotation SummarizationSetBy = User
+
+	column Name
+		dataType: string
+		lineageTag: e51e0e89-7ac4-4499-9035-1a0b093c373f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = User
+
+	column City
+		dataType: string
+		lineageTag: a9f5b7b6-0a48-48f8-a9b9-8c2410266b8a
+		dataCategory: City
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = User
+
+	column 'Postal Code'
+		dataType: double
+		lineageTag: 3c7b8f5a-3589-40eb-949b-c117267a94f0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Postal Code
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'State Code'
+		dataType: string
+		lineageTag: 8a39a0d6-beb4-4502-b92c-18ee458d93e4
+		dataCategory: StateOrProvince
+		summarizeBy: none
+		sourceColumn: State Code
+
+		annotation SummarizationSetBy = User
+
+	column 'Industry ID'
+		dataType: double
+		isHidden
+		lineageTag: 6b235d14-679a-4b9f-b7ee-dec224752f6a
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Industry ID
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	hierarchy CustomerHierarchy
+		lineageTag: 4bfbc411-8855-4a11-a61e-7258307615ab
+		sourceLineageTag: CustomerHierarchy
+
+		level Country
+			lineageTag: b69e254e-9725-412c-adfe-5bb299c8d363
+			column: Country/Region
+
+		level State
+			lineageTag: 82d46cd1-dacb-45cc-872e-609cb6ee4d53
+			column: 'State Code'
+
+		level City
+			lineageTag: ff6062f9-f680-47c4-aeb6-190c44bcf220
+			column: City
+
+		level 'Postal Code'
+			lineageTag: 8ffe925f-6bbc-4258-b560-c47500e0669c
+			column: 'Postal Code'
+
+		level Customer
+			lineageTag: 4fff5eea-b04f-47bd-89d8-baec71bf4227
+			column: Customer
+
+	partition Customers = entity
+		mode: directQuery
+		source
+			entityName: Customers
+			expressionSource: 'DirectQuery to AS - Customer Profitability Sample'
+

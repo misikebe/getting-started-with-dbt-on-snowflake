@@ -1,0 +1,111 @@
+table Suppliers
+	lineageTag: 42550c0a-6004-485c-9a42-e54789741e29
+
+	column SupplierID
+		dataType: int64
+		formatString: 0
+		lineageTag: 857b9bdf-02db-4ca5-9866-d7806ba30663
+		summarizeBy: none
+		sourceColumn: SupplierID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CompanyName
+		dataType: string
+		lineageTag: 9cb570e1-d92d-4409-a571-865db17c9fc0
+		summarizeBy: none
+		sourceColumn: CompanyName
+
+		annotation SummarizationSetBy = Automatic
+
+	column ContactName
+		dataType: string
+		lineageTag: 3aa4ebf6-811e-4c70-81f6-baa7b17c88ac
+		summarizeBy: none
+		sourceColumn: ContactName
+
+		annotation SummarizationSetBy = Automatic
+
+	column ContactTitle
+		dataType: string
+		lineageTag: de4e5d7d-942f-415e-8655-c1c03bb049d4
+		summarizeBy: none
+		sourceColumn: ContactTitle
+
+		annotation SummarizationSetBy = Automatic
+
+	column Address
+		dataType: string
+		lineageTag: c12b968c-4c9c-42d5-80a8-eed03c662fc7
+		summarizeBy: none
+		sourceColumn: Address
+
+		annotation SummarizationSetBy = Automatic
+
+	column City
+		dataType: string
+		lineageTag: 93236757-0183-4511-9c28-3ed61d902934
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		lineageTag: 27a35260-8406-499e-95fb-c227e9bbd39a
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column PostalCode
+		dataType: string
+		lineageTag: c1eaf677-9ad1-40ac-aad7-86e77d04a76d
+		summarizeBy: none
+		sourceColumn: PostalCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: 950fea12-7b6c-4258-88ca-89e0d943fd03
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column Phone
+		dataType: string
+		lineageTag: 913e56f9-ad25-4648-a593-226865d668e4
+		summarizeBy: none
+		sourceColumn: Phone
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fax
+		dataType: string
+		lineageTag: cdacc629-62a9-4f7c-b170-4fd06c39c00a
+		summarizeBy: none
+		sourceColumn: Fax
+
+		annotation SummarizationSetBy = Automatic
+
+	column HomePage
+		dataType: string
+		lineageTag: c87151f7-42c2-4334-89b5-ce3ead25fbf0
+		summarizeBy: none
+		sourceColumn: HomePage
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Suppliers = m
+		mode: import
+		source =
+				let
+				    Source = OData.Feed("https://services.odata.org/V3/Northwind/Northwind.svc/", null, [Implementation="2.0"]),
+				    Suppliers_table = Source{[Name="Suppliers",Signature="table"]}[Data]
+				in
+				    Suppliers_table
+
+	annotation PBI_ResultType = Table
+

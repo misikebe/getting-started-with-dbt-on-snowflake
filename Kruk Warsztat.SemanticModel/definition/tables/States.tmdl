@@ -1,0 +1,38 @@
+table States
+	lineageTag: 34711574-d2af-42fa-83d0-5bd7cb515ae4
+
+	column StateCode
+		dataType: string
+		isHidden
+		isNullable: false
+		lineageTag: 29d3de82-a13d-4c6a-b9fe-b0be1c62f951
+		dataCategory: StateOrProvince
+		summarizeBy: none
+		sourceColumn: StateCode
+
+		annotation SummarizationSetBy = User
+
+	column State
+		dataType: string
+		lineageTag: 8391a146-f555-45bd-891c-91d57a186fad
+		dataCategory: StateOrProvince
+		summarizeBy: none
+		sourceColumn: State
+
+		annotation SummarizationSetBy = User
+
+	column Region
+		dataType: string
+		lineageTag: fdfd08c5-937a-4b74-a23a-9b46394d3f3f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = User
+
+	partition States = entity
+		mode: directQuery
+		source
+			entityName: States
+			expressionSource: 'DirectQuery to AS - Customer Profitability Sample'
+

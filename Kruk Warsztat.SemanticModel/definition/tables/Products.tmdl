@@ -1,0 +1,30 @@
+table Products
+	lineageTag: 71fe2e00-699e-4682-b28d-695fd757d6ed
+
+	column 'Product Key'
+		dataType: int64
+		isHidden
+		isNullable: false
+		formatString: 0
+		lineageTag: cd7f53d3-a2a2-419c-8dee-13cbe6e7905b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Product Key
+
+		annotation SummarizationSetBy = User
+
+	column Product
+		dataType: string
+		lineageTag: e8ba15a1-8ca1-47f9-b129-d03dcd7fe380
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Product
+
+		annotation SummarizationSetBy = User
+
+	partition Products = entity
+		mode: directQuery
+		source
+			entityName: Products
+			expressionSource: 'DirectQuery to AS - Customer Profitability Sample'
+

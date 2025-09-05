@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Northwind Sales"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ba0a94d5-6db0-bb38-4e6b-d0410ea42050"
+  }
+}

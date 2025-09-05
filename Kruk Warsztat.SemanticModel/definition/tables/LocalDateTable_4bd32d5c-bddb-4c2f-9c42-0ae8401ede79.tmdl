@@ -1,0 +1,108 @@
+table LocalDateTable_4bd32d5c-bddb-4c2f-9c42-0ae8401ede79
+	showAsVariationsOnly
+	lineageTag: a0ce2346-dc41-4562-8a1f-6c27cab9ba68
+
+	column Date
+		dataType: dateTime
+		isHidden
+		isNullable: false
+		formatString: General Number
+		lineageTag: c9e716d7-16bd-48b0-93b8-a1f592ea4f98
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = User
+
+	column Year
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 991b07d6-8644-4445-a529-7ebb1742b45b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = User
+
+	column MonthNo
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: d69cefb4-32c3-4615-aae5-03d6883a1144
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: MonthNo
+
+		annotation SummarizationSetBy = User
+
+	column Month
+		dataType: string
+		isHidden
+		lineageTag: 9e22b7f8-5ada-43ce-ad40-0504f6c92bf5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Month
+		sortByColumn: MonthNo
+
+		annotation SummarizationSetBy = User
+
+	column QuarterNo
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 6d0efa6b-d077-4375-b634-ae00ef4de903
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: QuarterNo
+
+		annotation SummarizationSetBy = User
+
+	column Quarter
+		dataType: string
+		isHidden
+		lineageTag: f59731f8-0603-427c-87cf-ab1f187f308b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Quarter
+		sortByColumn: QuarterNo
+
+		annotation SummarizationSetBy = User
+
+	column Day
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 3a5529dc-3af6-481a-92d5-81726c69ac73
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Day
+
+		annotation SummarizationSetBy = User
+
+	hierarchy 'Date Hierarchy'
+		lineageTag: e2d4fd94-ae72-49d8-bff6-20092b18d108
+		sourceLineageTag: Date Hierarchy
+
+		level Year
+			lineageTag: ff41f169-bff0-49b3-b18b-f836f871caa0
+			column: Year
+
+		level Quarter
+			lineageTag: 65d56db9-fba3-4e5c-8982-55e460513eed
+			column: Quarter
+
+		level Month
+			lineageTag: bd324b27-287a-4708-98eb-de11d8b40113
+			column: Month
+
+		level Day
+			lineageTag: 6dc15a5d-a43a-44a2-939d-0c2d380ed2bb
+			column: Day
+
+	partition LocalDateTable_4bd32d5c-bddb-4c2f-9c42-0ae8401ede79 = entity
+		mode: directQuery
+		source
+			entityName: LocalDateTable_4bd32d5c-bddb-4c2f-9c42-0ae8401ede79
+			expressionSource: 'DirectQuery to AS - Customer Profitability Sample'
+

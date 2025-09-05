@@ -1,0 +1,36 @@
+relationship 3a12b2b4-4100-40d2-a1f8-83d8258efac7
+	fromColumn: Facts.'BU Key'
+	toColumn: 'Business Units'.'BU Key'
+
+relationship 1e673e7b-2d8a-4522-bed5-ddec741d5faf
+	fromColumn: Facts.YearPeriod
+	toColumn: Dates.YearPeriod
+
+relationship f660bf8b-7518-4652-92c8-f37c2cd6d9f0
+	fromColumn: Facts.'Scenario Key'
+	toColumn: Scenarios.'Scenario Key'
+
+relationship e8f378e3-932d-46ba-825f-95b964797dbb
+	fromColumn: Facts.'Product Key'
+	toColumn: Products.'Product Key'
+
+relationship 34db199c-4a6d-4ce0-9164-bb034749330b
+	fromColumn: Facts.'Customer Key'
+	toColumn: Customers.Customer
+
+relationship f7381e8c-9f2b-41a5-8f37-1926c64ef5dc
+	fromColumn: 'Business Units'.Executive_id
+	toColumn: Executives.ID
+
+relationship 6887e72b-f6ed-496b-9d1b-62525aa1e8d9
+	fromColumn: Dates.Date
+	toColumn: LocalDateTable_4bd32d5c-bddb-4c2f-9c42-0ae8401ede79.Date
+
+relationship b22ac35f-431a-4e9f-928b-15a6e7749c7c
+	fromColumn: Customers.'Industry ID'
+	toColumn: Industries.ID
+
+relationship e57ee9cb-8804-4b33-a761-583c8da3b213
+	fromColumn: Customers.'State Code'
+	toColumn: States.StateCode
+

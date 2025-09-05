@@ -1,0 +1,37 @@
+table Categories
+	lineageTag: 3a9a5b2d-2401-405d-bfb1-a6012016e159
+
+	column CategoryID
+		dataType: int64
+		formatString: 0
+		lineageTag: 183028b9-7d50-4486-bd76-cf2100665e21
+		summarizeBy: none
+		sourceColumn: CategoryID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CategoryName
+		dataType: string
+		lineageTag: dc1e493d-97d0-4e95-b196-366f6856f8d1
+		summarizeBy: none
+		sourceColumn: CategoryName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Description
+		dataType: string
+		lineageTag: 38359c87-4584-4c7d-bac3-dcab18272bb8
+		summarizeBy: none
+		sourceColumn: Description
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Categories = m
+		mode: import
+		source =
+				let
+				    Source = OData.Feed("https://services.odata.org/V3/Northwind/Northwind.svc/", null, [Implementation="2.0"]),
+				    Categories_table = Source{[Name="Categories",Signature="table"]}[Data]
+				in
+				    Categories_table
+

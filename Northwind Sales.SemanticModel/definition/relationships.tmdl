@@ -1,0 +1,51 @@
+relationship c2e3b5fd-e241-4950-be27-a79f4e7f19d2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Orders.OrderDate
+	toColumn: LocalDateTable_68735f82-31a4-43d0-869e-427aa54c959b.Date
+
+relationship ac1d5487-7988-4e96-be8e-e24ed371edee
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Orders.RequiredDate
+	toColumn: LocalDateTable_63ee5ae1-5c69-48c9-ac04-4755f06887e5.Date
+
+relationship 00d5e3af-9959-455a-abc0-d15a1a520166
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Orders.ShippedDate
+	toColumn: LocalDateTable_fdd4bc79-0585-4089-b61d-c5c4a398b7f7.Date
+
+relationship 833affdf-1905-4cd8-8f7b-10d27611227d
+	fromColumn: Orders.CustomerID
+	toColumn: Customers.CustomerID
+
+	annotation PBI_IsFromSource = FS
+
+relationship fa6dd70a-6fa8-448d-84d4-a73208cc172a
+	fromColumn: Orders.ShipVia
+	toColumn: Shippers.ShipperID
+
+	annotation PBI_IsFromSource = FS
+
+relationship c8cab0bf-cc25-44bb-9de5-d0c12acae4eb
+	fromColumn: Order_Details.OrderID
+	toColumn: Orders.OrderID
+
+	annotation PBI_IsFromSource = FS
+
+relationship bc03cc40-65d4-4acf-84b2-ac15e9a9dc64
+	fromColumn: Order_Details.ProductID
+	toColumn: Products.ProductID
+
+	annotation PBI_IsFromSource = FS
+
+relationship 91bfe917-9be7-4f1c-9994-38e08f00aa0f
+	fromColumn: Products.CategoryID
+	toColumn: Categories.CategoryID
+
+	annotation PBI_IsFromSource = FS
+
+relationship e14fff9a-7141-44cf-8ff7-86b04b7adac1
+	fromColumn: Products.SupplierID
+	toColumn: Suppliers.SupplierID
+
+	annotation PBI_IsFromSource = FS
+

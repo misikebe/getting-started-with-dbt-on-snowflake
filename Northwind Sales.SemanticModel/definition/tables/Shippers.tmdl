@@ -1,0 +1,39 @@
+table Shippers
+	lineageTag: af934715-d9d2-43ee-a39a-335930521738
+
+	column ShipperID
+		dataType: int64
+		formatString: 0
+		lineageTag: 3b479004-8ff2-4ed8-ac62-ed41334dd586
+		summarizeBy: none
+		sourceColumn: ShipperID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CompanyName
+		dataType: string
+		lineageTag: 1c7e4660-8273-453d-a0b2-2d6b55083023
+		summarizeBy: none
+		sourceColumn: CompanyName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Phone
+		dataType: string
+		lineageTag: 3b7a84ad-7af5-4714-83e6-92ef6588b483
+		summarizeBy: none
+		sourceColumn: Phone
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Shippers = m
+		mode: import
+		source =
+				let
+				    Source = OData.Feed("https://services.odata.org/V3/Northwind/Northwind.svc/", null, [Implementation="2.0"]),
+				    Shippers_table = Source{[Name="Shippers",Signature="table"]}[Data]
+				in
+				    Shippers_table
+
+	annotation PBI_ResultType = Table
+

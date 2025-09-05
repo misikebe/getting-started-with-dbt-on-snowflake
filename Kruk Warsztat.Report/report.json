@@ -1,0 +1,78 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"type\":2,\"version\":\"5.59\"}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "e6224c40cbca47db2341",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"5c90c2c6c211fc5e20f3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.72644376899696,\"y\":0,\"z\":0,\"width\":574.8328267477204,\"height\":517.4468085106383,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Facts.Gross Margin\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Facts\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Gross Margin\"},\"Name\":\"Facts.Gross Margin\",\"NativeReferenceName\":\"Gross Margin\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 517.45,
+          "width": 574.83,
+          "x": 9.73,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"675ed3ed31c36c4b8603\",\"layouts\":[{\"id\":0,\"position\":{\"x\":584.5592705167173,\"y\":0,\"z\":1000,\"width\":574.8328267477204,\"height\":192.58358662613983,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"gauge\",\"projections\":{\"Y\":[{\"queryRef\":\"Facts.Gross Margin %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Facts\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Gross Margin %\"},\"Name\":\"Facts.Gross Margin %\",\"NativeReferenceName\":\"Gross Margin %\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Gross Margin %\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 192.58,
+          "width": 574.83,
+          "x": 584.56,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"c7ef8d02d5bffbd09870\",\"layouts\":[{\"id\":0,\"position\":{\"x\":584.5592705167173,\"y\":200.3647416413374,\"z\":2000,\"width\":658.4802431610942,\"height\":317.08206686930095,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Customers.Country/Region\",\"active\":true}],\"Y\":[{\"queryRef\":\"Facts.Gross Margin\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Customers\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"Facts\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Country/Region\"},\"Name\":\"Customers.Country/Region\",\"NativeReferenceName\":\"Country/Region\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Gross Margin\"},\"Name\":\"Facts.Gross Margin\",\"NativeReferenceName\":\"Gross Margin\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Gross Margin\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 317.08,
+          "width": 658.48,
+          "x": 584.56,
+          "y": 200.36,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"fa65ccfd8298a86ea142\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":527,\"width\":575,\"height\":193,\"z\":3000,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Business Units.Business Unit\",\"active\":true}],\"Y\":[{\"queryRef\":\"Facts.Gross Margin\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"Business Units\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"Facts\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Business Unit\"},\"Name\":\"Business Units.Business Unit\",\"NativeReferenceName\":\"Business Unit\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Gross Margin\"},\"Name\":\"Facts.Gross Margin\",\"NativeReferenceName\":\"Gross Margin\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Gross Margin\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 193.00,
+          "width": 575.00,
+          "x": 10.00,
+          "y": 527.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"fd69757c7341701131d4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":585,\"y\":527,\"width\":658,\"height\":193,\"z\":3001,\"tabOrder\":3001}}],\"singleVisual\":{\"visualType\":\"stackedAreaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Dates.YQM.Qtr\",\"active\":true},{\"queryRef\":\"Dates.YQM.Year\"},{\"queryRef\":\"Dates.YQM.Month\"}],\"Y\":[{\"queryRef\":\"Facts.Gross Margin\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dates\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"Facts\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Hierarchy\":\"YQM\"}},\"Level\":\"Qtr\"},\"Name\":\"Dates.YQM.Qtr\",\"NativeReferenceName\":\"YQM Qtr\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Hierarchy\":\"YQM\"}},\"Level\":\"Year\"},\"Name\":\"Dates.YQM.Year\",\"NativeReferenceName\":\"YQM Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Hierarchy\":\"YQM\"}},\"Level\":\"Month\"},\"Name\":\"Dates.YQM.Month\",\"NativeReferenceName\":\"YQM Month\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Gross Margin\"},\"Name\":\"Facts.Gross Margin\",\"NativeReferenceName\":\"Gross Margin\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 193.00,
+          "width": 658.00,
+          "x": 585.00,
+          "y": 527.00,
+          "z": 3001.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
